@@ -660,3 +660,476 @@ body.active {
 .copyright-link {
   display: inline-block;
 }
+
+
+
+
+
+
+/* BrainCooking STARTS NOW 
+
+MEdia Queries
+*/
+
+
+
+@media (min-width: 575px) {
+  :root {
+    --fs-1: 6rem;
+    --fs-2: 4.8rem;
+
+  }
+
+  .section {
+    margin-inline: 30px;
+  }
+
+  .newsletter-form,
+  .btn {
+    --fs-6: 2.2rem;
+  }
+
+  .newsletter-form .email-field {
+    font-size: var(--fs-6);
+    padding-inline-end: 170px;
+  }
+
+  .btn {
+    padding: 14px 30px;
+  }
+
+  .section-subtitle {
+    font-size: var(--fs-6);
+  }
+
+  .has-scrollbar {
+    margin-inline: -30px;
+    padding-inline: 30px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 15px;
+  }
+
+  .scrollbar-item {
+    min-width: 40%;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+
+
+
+
+  .header {
+    padding-block: 30px;
+  }
+
+
+
+
+
+  .search-bar .input-field {
+    --fs-1: 3.6rem;
+  }
+
+
+
+
+
+  .recommended .grid-list,
+  .footer-top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / 4;
+  }
+
+  .footer-text {
+    max-width: 400px;
+    margin-block-end: 20px;
+  }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+
+
+  :root {
+
+
+
+    --fs-1: 7.2rem;
+    --fs-2: 5.5rem;
+
+
+
+    --radius-16: 26px;
+
+  }
+
+
+
+
+
+  .section {
+    margin-inline: 50px;
+  }
+
+  .has-scrollbar {
+    margin-inline: -50px;
+    padding-inline: 50px;
+    gap: 15px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 25px;
+  }
+
+  .scrollbar-item {
+    min-width: 30%;
+  }
+
+  .grid-list {
+    gap: 40px 15px;
+  }
+
+
+
+
+
+  .search-bar {
+    padding: 25px;
+  }
+
+  .search-bar .input-field {
+    --fs-1: 4.6rem;
+  }
+
+
+
+
+
+  .top-author {
+    display: block;
+    text-align: right;
+  }
+
+  .recent .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 10px;
+  }
+
+  .top-author .avatar-item:not(:first-child) {
+    margin-inline-end: -25px;
+  }
+
+  .top-author .span {
+    color: var(--eerie-black_80);
+    font-size: var(--fs-8);
+    margin-block-start: 10px;
+  }
+
+  .avatar.large {
+    border: 6px solid var(--white);
+    width: 70px;
+  }
+
+  .avatar.large:is(:hover, :focus) {
+    transform: translateY(-3px);
+  }
+
+
+
+
+
+  .recommended .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+  }
+
+
+
+
+
+  .footer-top {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / 5;
+  }
+
+  .footer-link {
+    --fs-7: 1.7rem;
+  }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+
+
+  :root {
+
+
+
+    --fs-1: 8.8rem;
+
+
+
+    --section-padding: 60px;
+
+  }
+
+
+
+
+
+  .section {
+    margin-inline: 60px;
+  }
+
+  .has-scrollbar {
+    margin-inline: -60px;
+    padding-inline: 60px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 30px;
+  }
+
+  .btn {
+    --fs-6: 2.4rem;
+    padding: 18px 36px;
+  }
+
+  .newsletter-form {
+    max-width: 450px;
+  }
+
+  .newsletter-form .email-field {
+    padding-block: 18px;
+    padding-inline-start: 30px;
+  }
+
+  .blog-card .card-title {
+    padding-inline-end: 15px;
+  }
+
+  .blog-card .card-text {
+    font-size: unset;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .search-btn .span,
+  .header .btn {
+    display: block;
+  }
+
+  .header .wrapper {
+    gap: 10px;
+  }
+
+  .search-btn,
+  .header .btn {
+    --fs-6: 1.8rem;
+    padding: 6px 20px;
+  }
+
+  .search-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--cultured);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    border-radius: var(--radius-pill);
+    transition: var(--transition-1);
+  }
+
+  .search-btn:is(:hover, :focus) {
+    background-color: var(--gainsboro);
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    margin-inline: auto 12px;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 8px;
+  }
+
+
+
+
+
+  .hero {
+    padding-block-start: 25px;
+  }
+
+  .hero-title {
+    margin-block-end: 30px;
+  }
+
+  .hero .newsletter-text {
+    display: block;
+    max-width: 400px;
+    color: var(--eerie-black_80);
+    line-height: 1.3;
+  }
+
+  .hero .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+
+
+
+
+  .top-author .avatar {
+    width: 85px;
+  }
+
+
+
+
+
+  .recommended .grid-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+
+
+
+
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .newsletter .section-title {
+    margin-block-end: 0;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+
+  :root {
+
+
+
+    --fs-1: 9.2rem;
+    --fs-2: 6rem;
+    --fs-3: 2.6rem;
+    --fs-4: 2.4rem;
+
+  }
+
+
+
+
+
+  .section {
+    margin-inline: 70px;
+  }
+
+  .has-scrollbar {
+    margin-inline: -70px;
+    padding-inline: 70px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 35px;
+  }
+
+  .card-tag {
+    --fs-9: 1.4rem;
+    padding: 4px 10px;
+  }
+
+  .grid-list {
+    row-gap: 50px;
+  }
+
+
+
+
+
+  .section.hero {
+    padding-block: 50px 80px;
+  }
+
+  .hero-title {
+    margin-block-end: 50px;
+  }
+
+
+
+
+
+  .top-author .avatar {
+    width: 100px;
+  }
+
+  .recent .btn {
+    margin-block-start: 70px;
+  }
+
+
+
+
+
+  .footer-top {
+    grid-template-columns: 1fr 0.4fr 0.4fr 0.4fr 0.4fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+    padding-inline-end: 100px;
+  }
+
+}

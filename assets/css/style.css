@@ -575,3 +575,21 @@ body.active {
   margin-inline: auto;
   margin-block: 50px 30px;
 }
+
+
+
+
+
+/* RECOMENDED POST ?*/
+.section.recommended {
+  border-block-end: none;
+}
+
+.recommended .grid-list {
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.recommended .blog-card {
+  margin-block-end: 5px;
+}

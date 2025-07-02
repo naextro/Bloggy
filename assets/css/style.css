@@ -370,7 +370,10 @@ body.active {
 }
 
 
-
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
 
 
 
@@ -547,4 +550,28 @@ body.active {
 
 .hero-title {
   margin-block-end: 25px;
+}
+
+
+/* RECENT POST */
+
+.top-author {
+  display: none;
+}
+
+.recent {
+  padding-block-start: 15px;
+}
+
+.recent .section-title .strong {
+  display: block;
+}
+
+.recent .section-title {
+  margin-block-end: 20px;
+}
+
+.recent .btn {
+  margin-inline: auto;
+  margin-block: 50px 30px;
 }

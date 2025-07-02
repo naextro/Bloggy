@@ -32,3 +32,17 @@ const closeNavbar = function () {
 }
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
+
+
+
+const searchBar = document.querySelector("[data-search-bar]");
+const searchTogglers = document.querySelectorAll("[data-search-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleSearchBar = function () {
+  searchBar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("active");
+}
+
+addEventOnElem(searchTogglers, "click", toggleSearchBar);

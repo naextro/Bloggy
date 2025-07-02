@@ -593,3 +593,14 @@ body.active {
 .recommended .blog-card {
   margin-block-end: 5px;
 }
+
+
+
+/* newsletter */
+.newsletter {
+  padding-block-start: 40px;
+}
+
+.newsletter .section-title {
+  margin-block-end: 25px;
+}

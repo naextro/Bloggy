@@ -249,7 +249,125 @@ body.active {
   background-color: var(--blue-ryb);
 }
 
+.section-subtitle {
+  padding-block: 15px;
+}
 
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--light-gray-1);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.has-scrollbar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  padding-block-end: 20px;
+  margin-block-end: -20px;
+  margin-inline: -15px;
+  padding-inline: 15px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: var(--radius-pill);
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 10px;
+}
+
+.has-scrollbar:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
+  background-color: var(--light-gray-1);
+}
+
+.scrollbar-item {
+  min-width: 70%;
+  scroll-snap-align: center;
+}
+
+.blog-card .card-banner {
+  position: relative;
+  border-radius: var(--radius-16);
+  margin-block-end: 15px;
+}
+
+.avatar-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.avatar-list.absolute {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.avatar-item:not(:first-child) {
+  margin-inline-end: -15px;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: var(--radius-circle);
+  background: none;
+  border: 5px solid var(--white_20);
+  transition: var(--transition-1);
+  will-change: transform;
+}
+
+.avatar-list.absolute .avatar:is(:hover, :focus) {
+  transform: scale(0.9);
+  border-color: var(--white);
+}
+
+.card-meta-list {
+  display: flex;
+  gap: 5px;
+}
+
+.card-tag {
+  background-color: var(--cultured);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+}
+
+.card-tag:is(:hover, :focus) {
+  background-color: var(--gainsboro);
+}
+
+.blog-card .card-title {
+  margin-block: 8px 12px;
+  text-decoration-thickness: 2px;
+}
+
+.blog-card .card-text {
+  font-size: var(--fs-8);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  padding-inline-end: 20px;
+}
 
 
 
@@ -419,8 +537,14 @@ body.active {
 
 /* HERO */
 
-.newsletter-text { display: none; }
+.newsletter-text {
+  display: none;
+}
 
-.hero { padding-block-start: 10px; }
+.hero {
+  padding-block-start: 10px;
+}
 
-.hero-title { margin-block-end: 25px; }
+.hero-title {
+  margin-block-end: 25px;
+}

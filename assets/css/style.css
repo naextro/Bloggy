@@ -1,0 +1,136 @@
+:root {
+
+
+
+  --eerie-black_80: hsla(225, 9%, 9%, 0.8);
+  --eerie-black_60: hsla(225, 9%, 9%, 0.6);
+  --eerie-black: hsl(225, 9%, 9%);
+  --light-gray-1: hsl(0, 0%, 80%);
+  --light-gray-2: hsl(240, 2%, 81%);
+  --gainsboro: hsl(240, 9%, 91%);
+  --cultured: hsl(300, 8%, 95%);
+  --blue-ryb: hsl(232, 100%, 60%);
+  --white_20: hsla(0, 0%, 100%, 0.2);
+  --white: hsl(0, 0%, 100%);
+
+
+
+  --ff-inter: 'Inter', sans-serif;
+
+  --fs-1: 3.6rem;
+  --fs-2: 3.2rem;
+  --fs-3: 2.4rem;
+  --fs-4: 2.2rem;
+  --fs-5: 2rem;
+  --fs-6: 1.8rem;
+  --fs-7: 1.5rem;
+  --fs-8: 1.4rem;
+  --fs-9: 1.3rem;
+
+  --fw-700: 700;
+  --fw-500: 500;
+  --fw-300: 300;
+
+
+
+  --section-padding: 50px;
+
+
+
+  --radius-16: 16px;
+  --radius-pill: 200px;
+  --radius-circle: 50%;
+
+
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+html {
+  font-family: var(--ff-inter);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--eerie-black);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
